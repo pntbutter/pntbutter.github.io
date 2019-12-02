@@ -1,0 +1,25 @@
+.btn {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 50px;
+  font-family: $font-alt;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &-primary {
+    color: color-yiq($primary);
+
+    &:hover {
+      background-color: darken($primary, 20%);
+    }
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .btn {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+  }
+}

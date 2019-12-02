@@ -1,0 +1,21 @@
+.site-footer {
+  border-bottom: 3px solid $primary;
+
+  &__link {
+    padding: .15rem 0;
+    color: $white;
+    font-family: $font-alt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .15s;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__copyright {
+    opacity: .25;
+  }
+}

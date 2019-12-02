@@ -1,0 +1,39 @@
+.meta-nav {
+  border-radius: 100px;
+  background-color: rgba($white, 10%);
+
+  .btn {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  &__cart-link {
+    display: block;
+    position: relative;
+
+    &:hover {
+      .meta-nav__cart-count {
+        transform: translate(50%, -50%);
+      }
+    }
+  }
+
+  &__cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $primary;
+    font-size: 1.1rem;
+    font-family: $font-alt;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+    transform: translate(50%, -50%) scale(0.7);
+    transition: .2s;
+    will-change: transform;
+  }
+}

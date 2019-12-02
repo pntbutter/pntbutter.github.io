@@ -1,0 +1,60 @@
+.post-list {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    border-radius: 200px;
+    color: $white;
+    box-shadow: 0 0 0 .75rem rgba($black, 0);
+    transition: .2s;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      background-color: rgba($black, .5);
+      box-shadow: 0 0 0 .5rem rgba($black, .5);
+
+      .post-list__icon {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  &__image {
+    width: 110px;
+    height: 110px;
+    border: 4px solid $primary;
+    border-radius: 50%;
+    object-fit: cover;
+
+    &--tactica-report     { border-color: $tactica-report; }
+    &--narrative-report   { border-color: $narrative-report; }
+    &--campaign-report    { border-color: $campaign-report; }
+    &--vox-cast           { border-color: $vox-cast; }
+    &--list-analysis      { border-color: $list-analysis; }
+    &--cast-of-players    { border-color: $cast-of-players; }
+    &--data-slate         { border-color: $data-slate; }
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding: 0 1.5rem;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+    transition: .2s;
+    opacity: .5;
+    transform: translateX(-.5rem);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .post-list {
+    &__item {
+      flex-direction: row;
+    }
+  }
+}
