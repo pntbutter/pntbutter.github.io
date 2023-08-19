@@ -6,9 +6,9 @@
         </header>
 
         <div class="grid  grid-cols-4  gap-6  p-6">
-            <div>red guard</div>
-            <div>demolitionist</div>
-            <div>void warden</div>
+            <Character name="Red Guard" />
+            <Character name="Demolitionist" />
+            <Character name="Void Warden" />
             <InitiativList />
         </div>
     </div>
